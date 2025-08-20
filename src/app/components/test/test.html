@@ -1,1 +1,24 @@
+
+
+<div>
 <p>test works!</p>
+<p>{{title}}</p>
+<p>{{fulLine()}}</p>
+
+<p [ngStyle]="{color:'red'}">this is ngStyle</p>
+
+<button [disabled]="isEnabled">click</button>
+
+
+<p [ngClass]="{'active':isActive, 'disabled': isDesabled  }">ngClass</p>
+
+
+<button (click)="toggleState">toggleState</button>
+
+<input type="text" [(ngModel)]="inputTxt">
+<p>{{inputTxt}} </p>
+
+<p>{{childMsg}} </p>
+
+<button (click)="sendMsgToParent()">sendMsgToParent</button>
+</div>

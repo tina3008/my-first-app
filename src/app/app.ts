@@ -10,4 +10,10 @@ import { Test } from './components/test/test';
 })
 export class App {
   protected readonly title = signal('my-first-app');
+  parentMessage = 'message from parent';
+  childMessage = '--';
+
+  getChildMessage(message: string) {
+    this.childMessage= message;
+  };
 }

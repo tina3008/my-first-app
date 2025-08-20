@@ -1,4 +1,25 @@
 p{
   background-color: aqua;
-  
 }
+
+button {
+  background-color: azure;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid salmon;
+}
+
+button:disabled{
+  background-color: chartreuse;
+  border-radius: 20%;
+  cursor: not-allowed;
+}
+
+.active{
+  background-color: bisque;
+}
+
+.disabled{
+  background-color: chocolate;
+}
+

@@ -336,4 +336,5 @@
 
 <!-- my code !!!!!!!!!!!!!!!!------------------- -->
 <p>app works!</p>
-<app-test></app-test>
+<p>{{childMessage}} </p>
+<app-test [childMsg]="parentMessage" (childMessage)="getChildMessage($event)"></app-test>
